@@ -70,7 +70,7 @@ app.get('/api/customers/:id', async(req, res) => {
     }
 });
 
-app.put('/api/customers/:id', async(req, res) => {
+app.put('/api/customers/:id', async(req, res) => {   
     try {   
         const customerId = req.params.id;
         const customer = await Customer.findOneAndReplace({_id: customerId}, req.body, {new: true});
