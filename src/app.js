@@ -87,7 +87,7 @@ app.delete('/api/customers/:id', async(req, res) => {
         const result = await Customer.deleteOne({_id: customerId});
         res.json({deleteCount: result.deletedCount});
     } catch (e){
-        res.status(500).json({error: "something went wrong"});
+        res.status(500).json({error: "something went wrong "});
     }
 });
 
