@@ -77,7 +77,7 @@ app.put('/api/customers/:id', async(req, res) => {
         console.log(customer);
         res.json({customer});
     } catch (e) {
-        console.log(e.message)
+        console.log(e.message)    
         res.status(500).json({error: 'something went wrong'});
     }        
 }); 
