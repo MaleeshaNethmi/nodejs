@@ -92,7 +92,7 @@ app.delete( '/api/customers/:id' , async(req, res) => {
 });
 
 app.post('/api/customers', async (req, res) => {
-    console.log(req.body);
+    console.log(req.body);  
     const customer = new Customer(req.body);
     try{
         await customer.save();
