@@ -81,7 +81,7 @@ app.put('/api/customers/:id', async(req, res) => {
     }        
 }); 
 
-app.delete('/api/customers/:id', async(req, res) => {
+app.delete( '/api/customers/:id' , async(req, res) => {
     try {
         const customerId = req.params.id;
         const result = await Customer.deleteOne({_id: customerId});
