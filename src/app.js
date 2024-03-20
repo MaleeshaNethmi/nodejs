@@ -8,7 +8,7 @@ mongoose.set('strictQuery', false );
 
 app.use(cors());
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true}));
 
 if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
