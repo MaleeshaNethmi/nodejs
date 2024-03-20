@@ -4,7 +4,7 @@ const Customer = require('./models/customer');
 const cors = require('cors');
 
 const app = express();
-mongoose.set('strictQuery', false);
+mongoose.set('strictQuery', false );
 
 app.use(cors());
 app.use(express.json());
