@@ -114,7 +114,7 @@ const start = async () => {
             console.log('App listening on port ' + PORT);
         });
     } catch (e) {
-        console.error('Error starting the app:', e);
+        console.error('Error starting the app:', e);  
     }
 };
 
