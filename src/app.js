@@ -74,7 +74,7 @@ app.put('/api/customers/:id', async(req, res) => {
     try {   
         const customerId = req.params.id;
         const customer = await Customer.findOneAndReplace({_id: customerId}, req.body, {new: true});
-        console.log(customer);
+        console.log(customer); 
         res.json({customer});
     } catch (e) {
         console.log(e.message)    
