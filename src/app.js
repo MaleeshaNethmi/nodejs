@@ -107,7 +107,7 @@ app.post('/', (req, res) => {
 });
 
 const start = async () => {
-    try {
+    try {  
         await mongoose.connect(CONNECTION);
 
         app.listen(PORT, () => {
